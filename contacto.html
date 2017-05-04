@@ -1,0 +1,88 @@
+ <!doctype html>
+ 	<html lang="es">
+ 	<head>
+ 		<meta charset="UTF-8" />
+		<title>Caracoles</title>
+		<script src="js/modernizr.js"></script> <!-- Compatibilidad con navegadores antiguos -->
+		<link rel="stylesheet" type="text/css" media="all" href="estilos/style.css" /> <!-- Linkamos el achivo CSS -->
+		<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+		<script type="text/javascript" src="jq/jquery-ui-1.12.1/external/jquery/jquery.js"></script>
+		<script type="text/javascript" src="jq/jquery-ui-1.12.1/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/motor.js"></script>
+ 	</head>
+ 	<body>
+ 		<header class="principal">
+
+			<div class="fila">
+
+				<a href="#" class="logo_principal"/></a>
+				<nav class="primero_derecha navegacion_principal">
+
+					<ul>
+						<li>666-691-729</li>
+						<li><a href="#">Contactar</a></li>
+					</ul>
+				</nav>
+
+				<nav class="navegacion_principal">
+
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="#">Productos</a></li>
+						<li><a href="#">P.Venta</a></li>
+						<li><a href="#">Recetas</a></li>
+						<li><a href="#">Contacto</a></li>
+					</ul>			
+				</nav>
+			</div>
+		</header>
+
+ 		<div id="datos">
+ 			<div id="fila">
+
+				<div class="tabla col_imagen">
+						<table class="tabla_estilo" border="1">
+							<form action="envio.php" name="miFormulario" id="miFormulario" method="post">
+  								<caption class="titulos">Rellena el Formulario</caption>
+    							
+    							<tr>
+
+        							<td class="celda1">
+        								<h2 id="formText">Nombre</h2>
+										<input type="text" name="nombre" id="nombre"/>
+									</td>
+        							<td class="celda">
+        								<h2 id="formText">Fecha de Nacimiento</h2>
+										<input type="text" id="calendario">
+        							</td>
+
+    							</tr>
+
+
+    							<tr>
+        							<td class="celda1">
+        								<h2 id="formText">Edad</h2>
+										<input type="text" id="edad" name="edad" value="50" readonly="readonly"/>
+										<p id="formText">Mueva el indicador para fijar la edad</p>
+										<div id="slider"></div>
+        							</td>
+
+        							<td class="celda">
+        								<h2 id="formText">Ciudad</h2>
+										<input type="text" name="ciudad" id="ciudad"/>
+									</td>
+    							</tr>
+
+    							<tr>
+        							<td class="celda1">
+        								<input type="submit" id="enviar"/>
+        							</td>
+    							</tr>
+    						
+    						</form>
+ 						</table>
+					</div>
+
+ 	</body>
+ </html>
